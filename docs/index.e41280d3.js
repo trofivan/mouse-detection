@@ -1,0 +1,2 @@
+var e,t;(t=e||(e={})).MOUSE="Mouse",t.TRACKPAD="Trackpad";const n=document.getElementById("root"),d=document.getElementById("text"),a={[e.MOUSE]:0,[e.TRACKPAD]:0};n.addEventListener("wheel",(t=>{const n=function(t){return(t.wheelDeltaY?t.wheelDeltaY===-3*t.deltaY:0===t.deltaMode)?e.TRACKPAD:e.MOUSE}(t);a[n]+=1,d.innerHTML=`\n        <h3>${n}</h3>\n        <p>\n            Mouse: ${a[e.MOUSE]}<br/>\n            Trackpad: ${a[e.TRACKPAD]}\n        </p>\n\n    `}));export default{};
+//# sourceMappingURL=index.e41280d3.js.map
